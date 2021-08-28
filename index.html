@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BookLify | Welcome</title>
+</head>
+<body style="background-color: #15202B;">
+    
+    <div class="container" style="color: white;">
+        <h1 style="cursor: pointer; font-family: Arial, Helvetica, sans-serif; font-weight: 600;">BookLifY</h1>
+        <br>
+        <h3 style="cursor: pointer; font-weight: 600;">Add Book</h3>
+        <div class="alert" style="text-align:center; padding:10px; background-color:#79c879; margin-bottom:10px; display:none;">Book info stored successfully</div>
+        <form id="book-form">
+            <div>
+                <label for="email" style="font-size: 18px; font-weight: 600;">Email</label>
+                <input type="email" id="email" class="u-full-width" required>    
+            </div>
+
+            <div>
+                <label for="title" style="font-size: 18px; font-weight: 600;">Title</label>
+                <input type="text" id="title" class="u-full-width" required>    
+            </div>
+
+            <div>
+                <label for="author" style="font-size: 18px; font-weight: 600;">Author</label>
+                <input type="text" id="author" class="u-full-width" required>    
+            </div>
+            
+            <div>
+                <label for="about" style="font-size: 18px; font-weight: 600;">About The Book</label> 
+                <textarea id="about" class="u-full-width" name="message" style="min-height:100px;
+                font-size: 14px;" required></textarea>   
+            </div>
+
+            <div>
+                <input type="submit" value="Submit" class="u-full-width" style="color: white; background-color: #17a2b8; margin-top: 10px; width: 100%; border: none; font-size: 17px;">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+
